@@ -145,7 +145,7 @@ a {
 
 .services {
     width: 960px;
-    height: 494px;
+    height: 449px;
     padding: 45px 30px 0 30px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
@@ -167,7 +167,6 @@ a {
 }
 
 .services__description {
-
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
