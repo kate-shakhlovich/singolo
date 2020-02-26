@@ -40,11 +40,11 @@
     font-family: "Lato";
     font-weight: 300;
     text-align: left;
-    letter-spacing:-0.22px;
+    letter-spacing: -0.22px;
 }
 
 .container__buttons {
-    
+
     width: 290px;
 }
 
@@ -72,7 +72,8 @@
     transition: .3s;
 }
 
-.button__item:hover, .button__item:focus {
+.button__item:hover,
+.button__item:focus {
     cursor: pointer;
     color: #dedede;
     border-color: #c5c5c5;
@@ -97,21 +98,23 @@
 }
 
 .about_us {
-    
-    height: 100%;
+    height: 734px;
     margin: 0;
     padding: 0 30px 0 30px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
 }
 
 .about_us__header {
     width: 940px;
     padding: 0 10px 0 10px;
-    
+
 }
 
 
 .about_us__title {
-    padding-top: 44px;
+    margin: 0;
+    padding-top: 69px;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -122,7 +125,7 @@
 
 .about_us__description {
     margin-bottom: 0;
-    padding-top: 1px;
+    padding-top: 8px;
     width: 940px;
     font-size: 18px;
     line-height: 30px;
@@ -131,7 +134,7 @@
     font-weight: 300;
     text-align: justify;
     letter-spacing: -0.39px;
-    
+
 }
 
 .person {
@@ -141,14 +144,44 @@
     width: 960px;
 }
 
-
-
 .person_box {
     padding: 0 10px 0 10px;
-    /*margin-rig;ht: 10px;
-    margin-left: 10px;
+}
+
+.person__title {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: -0.06px;
+}
+
+.person__description {
+    margin-top: 11px;
     width: 300px;
-    height: 300px;*/
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: -0.01px;
+}
+
+.social__icon {
+    margin-top: 25px;
+}
+
+.icon {
+    padding-right: 4px;
+}
+
+.icon:hover {
+    cursor: pointer;
 
 }
 
