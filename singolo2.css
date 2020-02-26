@@ -96,6 +96,32 @@
     margin-bottom: 20px;
 }
 
+.about_us__title {
+    padding-top: 44px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.about_us__description {
+    margin-bottom: 0;
+    padding-top: 1px;
+    width: 940px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: -0.39px;
+    
+}
+
+
+
 @font-face {
     font-family: "Lato";
     src: url("assets/fonts/Lato-Regular.ttf") format("truetype");
