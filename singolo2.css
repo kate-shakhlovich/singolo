@@ -10,7 +10,7 @@
     width: 940px;
     height: 100%;
     margin: 0;
-    padding: 45px 40px 20px 40px;
+    padding: 45px 40px 21px 40px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
 }
@@ -27,7 +27,7 @@
 
 .portfolio__description {
     margin-bottom: 0;
-    padding-top: 1px;
+    padding-top: 2px;
     width: 940px;
     font-size: 18px;
     line-height: 30px;
@@ -79,7 +79,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-height: 601px;
+    max-height: 600px;
     overflow: hidden;
     margin-top: 19px;
     margin-bottom: 47px;
@@ -127,8 +127,8 @@
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    text-align: justify;
-    letter-spacing: -0.39px;
+    text-align: left;
+    letter-spacing: -0.04px;
 
 }
 
@@ -144,7 +144,7 @@
 }
 
 .person__title {
-    margin-top: 12px;
+    margin-top: 13.5px;
     margin-bottom: 0;
     font-size: 18px;
     line-height: 18px;
@@ -168,7 +168,7 @@
 }
 
 .social__icon {
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 .icon {
