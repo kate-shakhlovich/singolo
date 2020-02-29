@@ -144,6 +144,8 @@
 }
 
 .person__title {
+    height: 17px;
+    overflow: hidden;
     margin-top: 13.5px;
     margin-bottom: 0;
     font-size: 18px;
