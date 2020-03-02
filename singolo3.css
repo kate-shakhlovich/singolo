@@ -5,9 +5,38 @@
 
 }
 
+.quote {
+    width: 940px;
+    height: 100%;
+    margin: 0;
+    padding: 44px 40px 18px 40px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
 
+}
 
+.quote__title {
+    padding-bottom: 2px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: -0.2px;
+}
 
+.quote__description {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: -0.04px;
+}
 
 @font-face {
     font-family: "Lato";
