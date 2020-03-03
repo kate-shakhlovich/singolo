@@ -114,9 +114,76 @@
 
 .contact__info {
     width: 300px;
-
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
+
+.info__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.info__description {
+    margin-top: 10px ;
+    margin-bottom: 22px;
+    font-size: 12px;
+    line-height: 21.5px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: -0.15px;
+}
+
+.info__location,
+.info__tel,
+.info__mail {
+    font-size: 12px;
+    line-height: 21.5px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    /*letter-spacing: px;*/
+}
+
+.info__location ::before {
+    content: "";
+    display: block;
+    background: url("assets/images/location-icon.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0;
+}
+
+.info__tel ::before {
+    content: "";
+    display: block;
+    background: url("assets/images/phone-icon.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0;
+}
+
+.info__mail ::before {
+    content: "";
+    display: block;
+    background: url("assets/images/mail-icon.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0;
+}
 
 @font-face {
     font-family: "Lato";
