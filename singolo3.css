@@ -41,7 +41,7 @@
     width: 940px;
     height: 100%;
     margin: 0;
-    padding: 10px 40px 0 40px;
+    padding: 10px 40px 15px 40px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
@@ -131,7 +131,7 @@
 }
 
 .info__description {
-    margin-top: 10px ;
+    margin-top: 10px;
     margin-bottom: 22px;
     font-size: 12px;
     line-height: 21.5px;
@@ -142,47 +142,77 @@
     letter-spacing: -0.15px;
 }
 
-.info__location,
-.info__tel,
-.info__mail {
-    font-size: 12px;
+
+
+.info__location {
+    padding: 1px 0 2px 3px;
+    margin-bottom: -2.5px;
+    font-size: 11px;
     line-height: 21.5px;
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
     text-decoration: none;
-    /*letter-spacing: px;*/
+    letter-spacing: 0.3px;
 }
 
-.info__location ::before {
+.info__tel {
+    padding-left: 3px;
+    font-size: 11px;
+    line-height: 21.5px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 0.35px;
+}
+
+.info__mail {
+    margin: 0px 0 2px 3px;
+    font-size: 11px;
+    line-height: 21.5px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 0.45px;
+}
+
+.info__location::before {
     content: "";
-    display: block;
+    position: relative;
+    display: inline-block;
+    top: 1px;
     background: url("assets/images/location-icon.png") no-repeat;
     width: 20px;
-    height: 20px;
-    float: left;
-    margin: 0;
+    height: 11px;
+
 }
 
-.info__tel ::before {
+.info__tel::before {
     content: "";
-    display: block;
+    position: relative;
+    display: inline-block;
+    top: 1px;
+    right: 2px;
     background: url("assets/images/phone-icon.png") no-repeat;
     width: 20px;
-    height: 20px;
-    float: left;
-    margin: 0;
+    height: 11px;
 }
 
-.info__mail ::before {
+.info__mail::before {
     content: "";
-    display: block;
+    position: relative;
+    display: inline-block;
+    top: 4.6px;
+    right: 3px;
     background: url("assets/images/mail-icon.png") no-repeat;
     width: 20px;
-    height: 20px;
-    float: left;
-    margin: 0;
+    height: 11px;
+
 }
 
 @font-face {
