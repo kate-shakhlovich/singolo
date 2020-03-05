@@ -78,6 +78,7 @@
     min-height: 189px;
     padding-top: 11px;
     resize: none;
+    letter-spacing: -0.06px;
 }
 
 
@@ -214,6 +215,7 @@
     height: 11px;
 
 }
+
 
 @font-face {
     font-family: "Lato";
