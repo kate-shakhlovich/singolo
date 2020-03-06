@@ -20,8 +20,8 @@
         <div class="contact">
             <div class="contact__form">
                 <form class="form" action="#" method="POST">
-                    <input class="form__input" type="text" name="name" required placeholder="Name (Required)">
-                    <input class="form__input" type="email" name="email" required placeholder="Email (Required)">
+                    <input class="form__input" type="text" name="name" required pattern="[A-Za-zА-Яа-яЁё]{3,100}" placeholder="Name (Required)">
+                    <input class="form__input" type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email (Required)">
                     <input class="form__input" type="text" name="subject" placeholder="Subject">
                     <textarea class="form__input form__describe" name="describe"
                         placeholder="Describe your project in detail..." cols="30" rows="10"></textarea>
