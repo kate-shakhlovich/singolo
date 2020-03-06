@@ -90,12 +90,12 @@
     box-shadow: 0px 0px 4px 1px #943732;
 }
 
-.form__input:focus:invalid {
-   outline: 2px solid red;
+.form__input:focus:invalid:nth-child(-n+2) {
+    outline: 2px solid red;
 }
-  
-.form__input:focus:valid {
-    outline: 2px solid	#07f50790;
+
+.form__input:focus:valid:nth-child(-n+2) {
+    outline: 2px solid #07f50790;
 }
 
 

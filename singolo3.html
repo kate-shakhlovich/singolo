@@ -20,8 +20,10 @@
         <div class="contact">
             <div class="contact__form">
                 <form class="form" action="#" method="POST">
-                    <input class="form__input" type="text" name="name" required pattern="[A-Za-zА-Яа-яЁё]{3,100}" placeholder="Name (Required)">
-                    <input class="form__input" type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email (Required)">
+                    <input class="form__input" type="text" name="name" required pattern="[A-Za-zА-Яа-яЁё\s]+"
+                        placeholder="Name (Required)">
+                    <input class="form__input" type="email" name="email" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email (Required)">
                     <input class="form__input" type="text" name="subject" placeholder="Subject">
                     <textarea class="form__input form__describe" name="describe"
                         placeholder="Describe your project in detail..." cols="30" rows="10"></textarea>
@@ -35,11 +37,7 @@
                     <span class="info__location">Elm St. 14/05 Lost City</span>
                     <a class="info__tel" href="tel:035283318635">03528 331 86 35</a>
                     <a class="info__mail" href="mailto:info@singolo.com">info@singolo.com</a>
-                    </span>
                 </section>
-            </div>
-            <div class="contact__info">
-
             </div>
         </div>
     </div>
