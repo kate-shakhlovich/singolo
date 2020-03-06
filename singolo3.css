@@ -248,16 +248,16 @@ footer {
     letter-spacing: -0.01rem;
 }
 
-.social__icon {
+.footer__social__icon {
     margin-top: 2px;
     margin-right: 40px;
 }
 
-.icon {
+.footer__icon {
     padding-left: 4px;
 }
 
-.icon:hover {
+.footer__icon:hover {
     cursor: pointer;
 
 }
