@@ -213,6 +213,8 @@ a {
 }
 
 .cell__description {
+    width: 220px;
+    height: 62px;
     margin-top: 11px;
     font-size: 12px;
     line-height: 21px;
@@ -369,6 +371,7 @@ a {
 
 .person__box {
     padding: 0 10px 0 10px;
+    width: 300px;
 }
 
 .person__title {
@@ -444,6 +447,7 @@ a {
     font-weight: 300;
     text-align: left;
     letter-spacing: -0.04px;
+    text-align: justify;
 }
 
 .contact {
@@ -550,6 +554,8 @@ a {
 }
 
 .info__description {
+    height: 88px;
+    width: 300px;
     margin-top: 11px;
     margin-bottom: 20px;
     font-size: 12px;
