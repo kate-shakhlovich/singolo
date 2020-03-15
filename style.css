@@ -17,7 +17,15 @@ body {
     height: 89px;
     text-transform: uppercase;
     background-color: #2d303a;
-    border-bottom: 6px solid #2d303a;
+    border-bottom: 6px solid #3a3e4b;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.anchor {
+    position: relative;
+    top: -89px;
 }
 
 .wrapper {
@@ -90,7 +98,7 @@ a {
     color: #494e62;
 }
 
-.menu__item-link:focus {
+.menu__item-link_selected {
     color: #f06c64;
 }
 
@@ -107,7 +115,6 @@ a {
     height: 100%;
     margin: 0 auto;
     padding: 0 40px;
-
 }
 
 .slider__arrow-left {
