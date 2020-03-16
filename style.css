@@ -118,16 +118,50 @@ a {
 }
 
 .slider__arrow-left {
-    position: absolute;
-    margin-top: 281px;
-    margin-left: 2px;
-
+    position: relative;
+    top: 280px;
+    z-index: 1;
 }
 
 .slider__arrow-left:hover {
     cursor: pointer;
 }
 
+.box__iPhone-Vertical {
+    display: inline-block;
+    position: absolute;
+    margin-left: -20px;
+}
+.box__iPhone-Horizontal {
+    display: inline-block;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 174px;
+}
+
+.button__iPhone-Vertical {
+    position: relative;
+    top: 461px;
+    left: 158px;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #fafafa00;
+}
+
+.button__iPhone-Vertical:hover {
+    cursor: pointer;
+}
+
+.dark-screen__iPhone-Vertical {
+    display: none;
+    position: relative;
+    top: 75px;
+    left: 85px;
+    width: 189px;
+    height: 335px;
+    background-color: black;
+}
 
 .slider__iPhone-Vertical {
     position: absolute;
@@ -135,21 +169,57 @@ a {
     margin-left: 72px;
 }
 
+
 .slider__iPhone-Horizontal {
     position: absolute;
-    margin-top: 174px;
+    margin-bottom: 50px;  
     margin-left: 385px;
 }
 
+.button__iPhone-Horizontal {
+    position: relative;
+    top: 86px;
+    left: 394px;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #fafafa00;
+}
+
+.button__iPhone-Horizontal:hover {
+    cursor: pointer;
+}
+
+
+.dark-screen__iPhone-Horizontal {
+    display: none;
+    position: relative;
+    top: -28px;
+    left: 445px;
+    width: 334px;
+    height: 189px;
+    background-color: black;
+}
+
+
 .slider__arrow-right {
-    position: absolute;
-    margin-top: 281px;
-    margin-left: 924px;
+    position: relative;
+    top: 280px;
+    left: 905px;
 }
 
 .slider__arrow-right:hover {
     cursor: pointer;
 }
+
+
+.slider__iPhone-Multiple {
+    display: none;
+    position: absolute;
+    margin-top: 53px;
+    margin-left: 200px;
+}
+
 
 .services {
     width: 960px;

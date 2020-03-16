@@ -19,7 +19,8 @@
                 </h1>
                 <nav class="navigation">
                     <ul class="menu">
-                        <li class="menu__item"><a href="#home" class="menu__item-link menu__item-link_selected">Home</a></li>
+                        <li class="menu__item"><a href="#home" class="menu__item-link menu__item-link_selected">Home</a>
+                        </li>
                         <li class="menu__item"><a href="#services" class="menu__item-link">Services</a></li>
                         <li class="menu__item"><a href="#portfolio" class="menu__item-link">Portfolio</a></li>
                         <li class="menu__item"><a href="#about" class="menu__item-link">About</a></li>
@@ -31,15 +32,24 @@
         <div class="slider">
             <div class="slider__content">
                 <img class="slider__arrow-left" src="assets/images/arrow_left.png" alt="arrow left">
-                <img class="slider__iPhone-Vertical" src="assets/images/iPhone_Vertical.png" alt="iPhone Vertical"
-                    height="483">
-                <img class="slider__iPhone-Horizontal" src="assets/images/iPhone_Horizontal.png" alt="iPhone Horizontal"
-                    height="240">
+                <div class="box__iPhone-Vertical">
+                    <img class="slider__iPhone-Vertical" src="assets/images/iPhone_Vertical.png" alt="iPhone Vertical"
+                        height="483">
+                    <div class="button__iPhone-Vertical"></div>
+                    <div class="dark-screen__iPhone-Vertical"></div>
+                </div>
+                <div class="box__iPhone-Horizontal">
+                    <img class="slider__iPhone-Horizontal" src="assets/images/iPhone_Horizontal.png"
+                        alt="iPhone Horizontal" height="240">
+                    <div class="button__iPhone-Horizontal"></div>
+                    <div class="dark-screen__iPhone-Horizontal"></div>
+                </div>
+                <img class="slider__iPhone-Multiple" src="assets/images/slider2.png" alt="Multiple iPhone">
                 <img class="slider__arrow-right" src="assets/images/arrow_right.png" alt="arrow right">
             </div>
         </div>
         <div class="services">
-            <a class="anchor" name="services"></a>    
+            <a class="anchor" name="services"></a>
             <article class="services__header">
                 <h2 class="services__title">Our Services</h2>
                 <p class="services__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris
