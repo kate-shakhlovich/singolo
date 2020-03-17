@@ -62,7 +62,12 @@ const images = Array.from(document.getElementsByClassName("portfolio-image"));
 const gallery = document.getElementsByClassName("gallery")[0];
 for (const button of portfolioButtons) {
     button.addEventListener("click", function() {
-        // TODO Add styling
+        if (this.classList.contains('button__item_selected')) return;
+        for (const item of portfolioButtons) {
+            item.classList.remove('button__item_selected');
+        }
+        this.classList.add('button__item_selected');
+        
         const shuffledNodes = shuffle(images);
         for (const image of images) {
             gallery.removeChild(image);
@@ -73,12 +78,9 @@ for (const button of portfolioButtons) {
     });
 }
 
-/**
- * Shuffles array in place.
- * @param {Array} a items An array containing the items.
- */
+
 function shuffle(a) {
-    var j, x, i;
+    let j, x, i;
     for (i = a.length - 1; i > 0; i--) {
         j = Math.floor(Math.random() * (i + 1));
         x = a[i];
@@ -87,5 +89,21 @@ function shuffle(a) {
     }
     return a;
 }
+
+const imageClassSelected = 'portfolio-image_selected';
+const imagesPortfolio = document.getElementsByClassName('portfolio-image');
+for (const imagePortfolio of imagesPortfolio) {
+    imagePortfolio.addEventListener('click', function() {
+        const selectedImage = document.getElementsByClassName(imageClassSelected)[0];
+        if (selectedImage) {
+            selectedImage.classList.remove(imageClassSelected);
+        }
+        if (this !== selectedImage) {
+            this.classList.add(imageClassSelected);
+        }
+    });
+}
+
+
 
 //Get a quote

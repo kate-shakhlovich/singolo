@@ -312,7 +312,6 @@ a {
 
 
 .portfolio {
-
     width: 940px;
     height: 100%;
     margin: 0;
@@ -374,29 +373,42 @@ a {
     transition: .3s;
 }
 
-.button__item:hover,
-.button__item:focus {
+.button__item:hover {
     cursor: pointer;
     color: #dedede;
     border-color: #c5c5c5;
 }
 
+.button__item_selected {
+    border-color: #c5c5c5;
+    color: #dedede;
+
+}
 
 .gallery {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-height: 600px;
+    max-height: 610px;
     overflow: hidden;
     margin-top: 18px;
-    margin-bottom: 47px;
+    margin-bottom: 37px;
 }
 
 .portfolio-image {
     display: block;
     width: 220px;
     height: 187px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    border: 5px solid transparent;
+}
+
+.portfolio-image:hover {
+    cursor: pointer;
+}
+
+.portfolio-image_selected {
+    border: 5px solid #F06C64;
 }
 
 .about_us {
