@@ -1,13 +1,22 @@
 //header
 
-const itemLinks = document.querySelectorAll('.menu__item-link');
-for (const itemLink of itemLinks) {
-    itemLink.addEventListener('click', function () {
-        for (const item of itemLinks) {
-            item.classList.remove('menu__item-link_selected');
+window.onscroll = function() {
+    const positionCursor = window.scrollY + 89;
+    const sections = document.getElementsByClassName('section');
+    const itemLinks = document.getElementsByClassName('menu__item-link');
+    for (const section of sections) {
+        if (section.offsetTop <= positionCursor && (section.offsetTop + section.offsetHeight) > positionCursor) {
+            for (const itemLink of itemLinks) {
+                itemLink.classList.remove('menu__item-link_selected');
+                const hash = itemLink.getAttribute('href');
+                if (section.getAttribute('nav-id') === hash.substring(1)) {
+                    itemLink.classList.add('menu__item-link_selected');
+                    history.replaceState(null, null, hash);
+                }
+            }
+            return;         
         }
-        this.classList.add('menu__item-link_selected');
-    });
+    }
 }
 
 //slider
