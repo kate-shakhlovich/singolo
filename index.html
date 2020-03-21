@@ -206,11 +206,19 @@
                         placeholder="Name (Required)">
                     <input class="form__input" type="email" name="email" required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email (Required)">
-                    <input class="form__input" type="text" name="subject" placeholder="Subject">
-                    <textarea class="form__input form__describe" name="describe"
-                        placeholder="Describe your project in detail..." cols="30" rows="10"></textarea>
-                    <button class="form__submit">Submit</button>
+                    <input class="form__input" type="text" name="subject" placeholder="Subject" id="subject"  maxlength="100">
+                    <textarea id="description" class="form__input form__describe" name="describe"
+                        placeholder="Describe your project in detail..." cols="30" rows="10" maxlength="600"></textarea>
+                    <button type="submit" class="form__submit button__submit">Submit</button>
                 </form>
+                <div class="message-block hidden">
+                    <div class="message">
+                        <p>The letter was sent</p>
+                        <p id="subject-result"></p>
+                        <p id="description-result"></p>
+                        <button class="button__message" id="close" value="OK">OK</button>
+                    </div>
+                </div>
                 <section class="contact__info">
                     <h3 class="info__title">Contact Information</h3>
                     <p class="info__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce
@@ -224,7 +232,6 @@
         </div>
     </div>
     <footer>
-
         <div class="footer__container">
             <p class="copyright">© Copyright 2013</p>
             <div class="footer__social__icon">

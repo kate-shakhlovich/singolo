@@ -116,3 +116,26 @@ for (const imagePortfolio of imagesPortfolio) {
 
 
 //Get a quote
+
+const form = document.getElementsByClassName('form')[0];
+const buttonClose = document.getElementById('close');
+const subjectResult = document.getElementById('subject-result');
+const descriptionResult = document.getElementById('description-result')
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const subject = document.getElementById('subject').value.toString();
+    subjectResult.innerText = 'Subject: ' + subject;
+    if (subject === '') { subjectResult.innerText = 'No subject'};
+    const description = document.getElementById('description').value.toString();
+    descriptionResult.innerText = 'Description: ' + description;
+    if (description === '') { descriptionResult.innerText = 'No description';}
+    document.getElementsByClassName('message-block')[0].classList.remove('hidden');
+    form.reset();
+
+});
+
+buttonClose.addEventListener('click', () => {
+    document.getElementsByClassName('message-block')[0].classList.add('hidden');
+});
+

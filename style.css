@@ -628,11 +628,88 @@ a {
     box-shadow: 0px 0px 4px 1px #943732;
 }
 
+.button__submit {
+    display: block;
+}
+
+.message-block {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #0009;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.message {
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #521c1c;
+    text-align: center;
+    background-color: #b94c46d5;
+    max-width: 400px;
+    max-height: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    /* z-index: 6; */
+}
+
+#subject-result,
+#description-result {
+    overflow: hidden;
+}
+
+.button__message {
+    outline: none;
+    width: 95px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #dba6a9;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    transition: all 0.3s ease-out;
+    margin: 0 auto;
+}
+
+.button__message:hover {
+    background-color: #cf5750;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+.button__message:active {
+    background-color: #e9e0e1;
+    color: #a52a24;
+}
+
+
+
+
 .contact__info {
     width: 300px;
     display: flex;
     flex-direction: column;
     margin: 0;
+    
 }
 
 
