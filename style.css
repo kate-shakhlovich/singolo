@@ -12,13 +12,13 @@ body {
 
 .container {
     position: relative;
-    width: 1020px;
+    max-width: 1020px;
     margin: auto;
 }
 
 .header {
     width: 100%;
-    height: 89px;
+    /* height: 89px; */
     text-transform: uppercase;
     background-color: #2d303a;
     border-bottom: 6px solid #3a3e4b;
@@ -35,9 +35,10 @@ body {
 .wrapper {
     display: flex;
     justify-content: space-between;
-    width: 940px;
+    max-width: 940px;
     height: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-bottom: -10px;
     padding: 0 40px;
 }
 
@@ -108,23 +109,20 @@ a {
 
 .slider {
     width: 100%;
-    height: 594px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
 
 .slider__content {
-    position: relative;
-    width: 940px;
+    display: flex;
+    max-width: 940px;
     height: 100%;
-    margin: 0 auto;
-    padding: 0 40px;
+    margin: 0 40px 53px 40px;
 }
 
 .slider__arrow-left {
-    position: relative;
-    top: 280px;
-    z-index: 1;
+    flex: 1 0 auto;
+    margin-top: 280px;
 }
 
 .slider__arrow-left:hover {
@@ -132,25 +130,26 @@ a {
 }
 
 .box__iPhone-Vertical {
-    display: inline-block;
-    position: absolute;
-    margin-left: -20px;
+    margin-bottom: 58px;
+    position: relative;
+    flex: 1 1 33%;
+    height: 483px;
+    
 }
 .box__iPhone-Horizontal {
-    display: inline-block;
-    position: absolute;
-    margin-left: -20px;
-    margin-top: 174px;
+    position: relative;
+    flex: 1 1 91%;
+    height: 240px;
 }
 
 .button__iPhone-Vertical {
-    position: relative;
-    top: 461px;
-    left: 158px;
+    margin-top: 460px;
+    margin-left: 142px;
+    position: absolute;
     width: 42px;
     height: 42px;
     border-radius: 21px;
-    background-color: #fafafa00;
+    background-color: #4518e600;
 }
 
 .button__iPhone-Vertical:hover {
@@ -159,9 +158,9 @@ a {
 
 .dark-screen__iPhone-Vertical {
     display: none;
-    position: relative;
-    top: 75px;
-    left: 85px;
+    position: absolute;
+    margin-top: 116px;
+    margin-left: 69px;
     width: 189px;
     height: 335px;
     background-color: black;
@@ -169,25 +168,27 @@ a {
 
 .slider__iPhone-Vertical {
     position: absolute;
-    margin-top: 53px;
-    margin-left: 72px;
+    margin-top: 52px;
+    margin-left: 55px;
+    
 }
 
 
 .slider__iPhone-Horizontal {
+    
     position: absolute;
-    margin-bottom: 50px;  
-    margin-left: 385px;
+    margin-top: 173px;  
+    margin-left: 129px;
 }
 
 .button__iPhone-Horizontal {
-    position: relative;
-    top: 86px;
-    left: 394px;
+    margin-left: 137px;
+    margin-top: 260px;
+    position: absolute;
     width: 42px;
     height: 42px;
     border-radius: 21px;
-    background-color: #fafafa00;
+    background-color: #1dd34a00;
 }
 
 .button__iPhone-Horizontal:hover {
@@ -197,9 +198,9 @@ a {
 
 .dark-screen__iPhone-Horizontal {
     display: none;
-    position: relative;
-    top: -28px;
-    left: 445px;
+    position: absolute;
+    margin-top: 186.5px;
+    margin-left: 188px;
     width: 334px;
     height: 189px;
     background-color: black;
@@ -207,21 +208,28 @@ a {
 
 
 .slider__arrow-right {
-    position: relative;
-    top: 280px;
-    left: 905px;
+    /* margin-left: 184px; */
+    margin-top: 280px;
+    flex: 1 0 auto;
+    height: 27px;
 }
 
 .slider__arrow-right:hover {
     cursor: pointer;
 }
 
+.box__iPhone-Multiple {
+    display: none;
+    position: relative;
+    flex: 4 1 96%;
+    /* left: 155px; */
+    top: 33px;
+    margin-bottom: 25px;
+    
+}
 
 .slider__iPhone-Multiple {
-    display: none;
-    position: absolute;
-    margin-top: 53px;
-    margin-left: 200px;
+    padding-left: 200px;
 }
 
 
@@ -403,8 +411,7 @@ a {
     display: block;
     width: 220px;
     height: 187px;
-    margin-bottom: 10px;
-    border: 5px solid transparent;
+    margin-bottom: 20px;
 }
 
 .portfolio-image:hover {
@@ -412,7 +419,8 @@ a {
 }
 
 .portfolio-image_selected {
-    border: 5px solid #F06C64;
+    outline: 5px solid #F06C64;
+    outline-offset: -5px;
 }
 
 .about_us {
@@ -848,6 +856,26 @@ footer {
     cursor: pointer;
 
 }
+
+
+@media (max-width: 768px) {
+    .portfolio {
+        width: 690px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @font-face {

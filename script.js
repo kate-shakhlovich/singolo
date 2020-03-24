@@ -24,7 +24,7 @@ window.onscroll = function() {
 const slideHandler = function() { 
     const iPhoneVertical = document.getElementsByClassName('box__iPhone-Vertical')[0];
     const iPhoneHorizontal = document.getElementsByClassName('box__iPhone-Horizontal')[0];
-    const iPhoneMultiple = document.getElementsByClassName('slider__iPhone-Multiple')[0];
+    const iPhoneMultiple = document.getElementsByClassName('box__iPhone-Multiple')[0];
     const slider = document.getElementsByClassName('slider')[0];
     if (window.getComputedStyle(iPhoneMultiple).display === 'none') {
         iPhoneVertical.style.display = 'none';
