@@ -264,7 +264,7 @@ a {
 .services {
     width: calc(100% - 60px);
     height: auto;
-    padding: 4.4% 3% 0 2.87%;
+    padding: 4.4% 30px 0 30px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
 }
@@ -300,8 +300,8 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 21px;
-    width: 960px;
+    padding-top: 2.2%;
+    width: 100%;
 }
 
 .cell {
