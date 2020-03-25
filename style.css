@@ -116,7 +116,7 @@ a {
 .slider__content {
     display: flex;
     max-width: 1020px;
-    height: 100%;
+    height: calc(600px - (1020px - 100vw) * (600 - 450) / (1020 - 768));
     margin: 0 auto;
 }
 
@@ -126,7 +126,7 @@ a {
     padding-left: 4%;
     padding-right: 4%;
     width: 16px;
-    height: 313px;
+    height: 55%;
 }
 
 .arrow-left {
@@ -156,8 +156,8 @@ a {
 }
 
 .button__iPhone-Vertical {
-    margin-top: 408px;
-    margin-left: 87px;
+    margin-top: 170%;
+    margin-left: 36%;
     position: absolute;
     width: calc((172/1020)*100%);
     height: calc((38/540)*100%);
@@ -172,10 +172,10 @@ a {
 .dark-screen__iPhone-Vertical {
     display: none;
     position: absolute;
-    margin-top: 64px;
-    margin-left: 14px;
-    width: calc((800/1020)*100%);
-    height: calc((336/594)*100%);
+    margin-top: 26%;
+    margin-left: 5.5%;
+    width: 79%;
+    height: 55%;
     background-color: black;
 }
 
@@ -195,11 +195,11 @@ a {
 }
 
 .button__iPhone-Horizontal {
-    margin-left: 9px;
-    margin-top: 86px;
+    margin-left: 2%;
+    margin-top: 18%;
     position: absolute;
-    width: 42px;
-    height: 42px;
+    /* width: 42px;
+    height: 42px; */
     width: calc((86/1020)*100%);
     height: calc((38/540)*100%);
     border-radius: 21px;
@@ -214,10 +214,10 @@ a {
 .dark-screen__iPhone-Horizontal {
     display: none;
     position: absolute;
-    margin-top: 13.5px;
-    margin-left: 59px;
-    width: calc((705/1020)*100%);
-    height: calc((172/540)*100%);
+    margin-top: 2.8%;
+    margin-left: 12.5%;
+    width: 69%;
+    height: 31%;
     background-color: black;
 }
 
@@ -228,7 +228,7 @@ a {
     padding-left: 4%;
     padding-right: 4%;
     width: 16px;
-    height: 313px;
+    height: 55%;
 }
 
 .arrow-right {
