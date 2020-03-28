@@ -1145,7 +1145,7 @@ a {
 
 footer {
     max-width: 1020px;
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: "Lato", sans-serif;
 }
