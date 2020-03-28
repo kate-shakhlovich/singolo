@@ -19,6 +19,23 @@ window.onscroll = function() {
     }
 }
 
+///burger
+
+const menuButton = document.querySelector('.menu__button');
+const navigationMenu = document.querySelector('.navigation');
+const blurNavigationMenu = document.querySelector('.menu__blur');
+const navigationMenuItems = document.querySelectorAll('.menu__item');
+const navigationTogglers = [menuButton, blurNavigationMenu, ...navigationMenuItems];
+
+const toggleNavigationHandler = (event) => {
+    navigationMenu.classList.toggle('navigation_active');
+    menuButton.classList.toggle('menu__button_active');
+    blurNavigationMenu.classList.toggle('menu__blur_active');
+};
+for (const toggler of navigationTogglers) {
+    toggler.addEventListener('click', toggleNavigationHandler);
+}
+
 //slider
 
 const slideHandler = function() { 
@@ -31,11 +48,13 @@ const slideHandler = function() {
         iPhoneHorizontal.style.display = 'none';
         iPhoneMultiple.style.display = 'inline-block';
         slider.style.background = '#648BF0';
+        slider.style['border-bottom'] = '6px solid #648BF0';
     } else {
         iPhoneVertical.style.display = 'inline-block';
         iPhoneHorizontal.style.display = 'inline-block';
         iPhoneMultiple.style.display = 'none';
         slider.style.background = '#f06c64';
+        slider.style['border-bottom'] = '6px solid #ea676b';
     }
 };
 const arrowRight = document.getElementsByClassName('slider__arrow-right')[0];
