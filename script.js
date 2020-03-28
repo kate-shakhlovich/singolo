@@ -26,11 +26,14 @@ const navigationMenu = document.querySelector('.navigation');
 const blurNavigationMenu = document.querySelector('.menu__blur');
 const navigationMenuItems = document.querySelectorAll('.menu__item');
 const navigationTogglers = [menuButton, blurNavigationMenu, ...navigationMenuItems];
+const logo = document.querySelector('.logo');
 
 const toggleNavigationHandler = (event) => {
     navigationMenu.classList.toggle('navigation_active');
     menuButton.classList.toggle('menu__button_active');
     blurNavigationMenu.classList.toggle('menu__blur_active');
+    logo.classList.toggle('logo_active');
+
 };
 for (const toggler of navigationTogglers) {
     toggler.addEventListener('click', toggleNavigationHandler);
