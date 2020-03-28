@@ -186,9 +186,6 @@ a {
     color: #ffffff;
 }
 
-.menu__item-link:hover {
-    color: #f06c64;
-}
 
 .menu__item:not(:first-child)::before {
     content: ".";
@@ -238,10 +235,7 @@ a {
     height: auto;
 }
 
-.slider__arrow-left:hover {
-    cursor: pointer;
-    background-color: #cf56509a;
-}
+
 
 .box__iPhone-Vertical {
     padding-top: 5%;
@@ -268,10 +262,7 @@ a {
     background-color: #4518e600;
 }
 
-.button__iPhone-Vertical:hover {
-    cursor: pointer;
-    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.281);
-}
+
 
 .dark-screen__iPhone-Vertical {
     display: none;
@@ -309,10 +300,7 @@ a {
     background-color: #1dd34a00;
 }
 
-.button__iPhone-Horizontal:hover {
-    cursor: pointer;
-    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.281);
-}
+
 
 
 .dark-screen__iPhone-Horizontal {
@@ -341,11 +329,7 @@ a {
     height: auto;
 }
 
-.slider__arrow-right:hover {
-    cursor: pointer;
-    background-color: #cf56509a;
 
-}
 
 .box__iPhone-Multiple {
     display: none;
@@ -362,32 +346,13 @@ a {
     height: auto;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 788px) {
     .slider__content {
         max-height: 452px;
     }
 }
 
-@media (max-width: 655px) {
-    .slider__content {
-        max-height: 370px;
-    }
-}
-@media (max-width: 550px) {
-    .slider__content {
-        max-height: 310px;
-    }
-}
-@media (max-width: 450px) {
-    .slider__content {
-        max-height: 250px;
-    }
-}
-@media (max-width: 390px) {
-    .slider__content {
-        max-height: 225px;
-    }
-}
+
 @media (max-width: 380px) {
     .slider__content {
         max-height: 211px;
@@ -592,13 +557,7 @@ a {
     transition: .3s;
 }
 
-.button__item:hover {
-    cursor: pointer;
-    color: #dedede;
-    border-color: #c5c5c5;
-    box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.514);
 
-}
 
 .button__item_selected {
     border-color: #c5c5c5;
@@ -791,12 +750,7 @@ a {
     margin-right: 4px;
 }
 
-.icon:hover {
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: #ffffffcb;
-    box-shadow: 0px 0px 5px 1px #5a5959;
-}
+
 
 @media (max-width: 575px) {
     .person {
@@ -1177,11 +1131,6 @@ footer {
     margin-left: 4px;
 }
 
-.footer__icon:hover {
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px 2px #943732;
-}
 
 
 @media (max-width: 610px) {
@@ -1197,7 +1146,47 @@ footer {
 }
 
 
-
+@media (hover: hover) {
+    .menu__item-link:hover {
+        color: #f06c64;
+    }
+    .button__iPhone-Vertical:hover {
+        cursor: pointer;
+        box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.281);
+    }
+    .slider__arrow-left:hover {
+        cursor: pointer;
+        background-color: #cf56509a;
+    }
+    .button__iPhone-Horizontal:hover {
+        cursor: pointer;
+        box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.281);
+    }
+    .slider__arrow-right:hover {
+        cursor: pointer;
+        background-color: #cf56509a;
+    
+    }
+    .button__item:hover {
+        cursor: pointer;
+        color: #dedede;
+        border-color: #c5c5c5;
+        box-shadow: 0 0 4px 3px rgba(128, 128, 128, 0.514);
+    
+    }
+    .icon:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #ffffffcb;
+        box-shadow: 0px 0px 5px 1px #5a5959;
+    }
+    .footer__icon:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 2px #943732;
+    }
+    
+}
 
 
 
